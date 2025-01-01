@@ -1,5 +1,5 @@
 
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 import { ContactForm } from './ContactForm';
 
 export function Contact() {
@@ -22,11 +22,11 @@ export function Contact() {
         <footer className="mt-20 flex justify-between items-center">
           <p className="text-gray-400">© 2024 Suan KC</p>
           <div className="flex space-x-4">
-            <a href="https://github.com" className="text-white hover:text-pink-500 transition-colors">
+            <a href="https://github.com/Suwaan2" className="text-white hover:text-pink-500 transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" className="text-white hover:text-pink-500 transition-colors">
-              <Linkedin className="w-6 h-6" />
+            <a href="https://www.instagram.com/kcsuwaan/" className="text-white hover:text-pink-500 transition-colors">
+              <Instagram className="w-6 h-6" />
             </a>
           </div>
         </footer>
