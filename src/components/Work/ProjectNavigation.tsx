@@ -1,4 +1,3 @@
-
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ProjectNavigationProps {
@@ -15,7 +14,8 @@ export function ProjectNavigation({
   onNext 
 }: ProjectNavigationProps) {
   return (
-    <div className="flex items-center space-x-4 mb-8">
+    <div className="flex items-center justify-between sm:justify-center space-x-4 mb-8">
+      {/* Previous Button */}
       <button
         onClick={onPrev}
         className="p-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg transition-colors"
@@ -23,9 +23,13 @@ export function ProjectNavigation({
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
-      <span className="text-white font-medium">
+
+      {/* Index Text */}
+      <span className="text-white font-medium text-lg sm:text-xl">
         {String(currentIndex + 1).padStart(2, '0')}/{String(totalProjects).padStart(2, '0')}
       </span>
+
+      {/* Next Button */}
       <button
         onClick={onNext}
         className="p-3 bg-navy-800 hover:bg-navy-700 text-white rounded-lg transition-colors"

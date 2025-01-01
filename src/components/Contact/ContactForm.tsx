@@ -21,7 +21,7 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-6 max-w-lg mx-auto">
       <div>
         <label htmlFor="fullName" className="block text-white mb-2">Full name</label>
         <input

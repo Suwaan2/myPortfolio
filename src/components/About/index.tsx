@@ -1,4 +1,3 @@
-
 import { SkillList } from './SkillList';
 
 export function About() {
@@ -9,25 +8,29 @@ export function About() {
           <h2 className="text-2xl font-bold text-white">About</h2>
         </div>
         
-        <h3 className="text-5xl font-bold text-white mb-16">Get a closer look at who I am.</h3>
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-16">
+          Get a closer look at who I am.
+        </h3>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text Section */}
           <div className="space-y-12">
             <div>
               <h4 className="text-2xl font-bold text-white mb-4">Who Am I</h4>
-              <p className="text-gray-300 text-lg">
-              I'm Suan KC a passionate web developer specializing in building dynamic and user-friendly web applications.
+              <p className="text-gray-300 text-base sm:text-lg">
+                I'm Suan KC, a passionate web developer specializing in building dynamic and user-friendly web applications.
               </p>
             </div>
             
             <SkillList />
           </div>
           
+          {/* Image Section */}
           <div className="relative">
             <img 
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070"
               alt="Developer workspace"
-              className="rounded-lg shadow-xl"
+              className="w-full rounded-lg shadow-xl"
             />
           </div>
         </div>
