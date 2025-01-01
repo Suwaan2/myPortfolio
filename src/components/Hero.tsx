@@ -5,6 +5,7 @@ export function Hero() {
     <div className="relative min-h-screen bg-navy-900 flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 flex justify-between items-center w-full">
         <div className="max-w-2xl">
+          
           <h1 className="text-5xl md:text-6xl font-bold text-white">
             Hey, I'm{' '}
             <span className="text-pink-500">Suan KC</span>
